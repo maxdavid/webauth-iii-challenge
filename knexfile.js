@@ -84,7 +84,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: { database: 'prod_postgres' }, // could be an object or a string
+    connection: productionDbConnection, // could be an object or a string
     migrations: {
       directory: './database/migrations'
     },
